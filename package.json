@@ -1,5 +1,5 @@
 {
-  "name": "@ckeditor/ckeditor5-build-classic",
+  "name": "@inventis/ckeditor5-build-classic",
   "version": "11.1.1",
   "description": "The classic editor build of CKEditor 5 – the best browser-based rich text editor.",
   "keywords": [
@@ -31,7 +31,6 @@
     "@ckeditor/ckeditor5-block-quote": "^10.1.0",
     "@ckeditor/ckeditor5-dev-utils": "^11.0.0",
     "@ckeditor/ckeditor5-dev-webpack-plugin": "^7.0.0",
-    "@ckeditor/ckeditor5-easy-image": "^10.0.3",
     "@ckeditor/ckeditor5-editor-classic": "^11.0.1",
     "@ckeditor/ckeditor5-essentials": "^10.1.2",
     "@ckeditor/ckeditor5-heading": "^10.1.0",
@@ -48,7 +47,9 @@
     "style-loader": "^0.23.0",
     "uglifyjs-webpack-plugin": "^1.2.7",
     "webpack": "^4.15.0",
-    "webpack-cli": "^3.0.8"
+    "webpack-cli": "^3.0.8",
+    "@ckeditor/ckeditor5-core": "^11.0.1",
+    "@ckeditor/ckeditor5-ui": "^11.1.0"
   },
   "engines": {
     "node": ">=6.9.0",

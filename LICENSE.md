@@ -19,3 +19,7 @@ Trademarks
 ----------
 
 **CKEditor** is a trademark of [CKSource](http://cksource.com) Frederico Knabben. All other brand and product names are trademarks, registered trademarks or service marks of their respective holders.
+
+MediaBundleAdapter
+------------------
+GPL v2.0
