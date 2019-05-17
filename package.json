@@ -55,13 +55,13 @@
     "node": ">=6.9.0",
     "npm": ">=3.0.0"
   },
-  "author": "CKSource (http://cksource.com/)",
+  "author": "Inventis",
   "license": "GPL-2.0-or-later",
   "homepage": "https://ckeditor.com",
   "bugs": "https://github.com/ckeditor/ckeditor5-build-classic/issues",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ckeditor/ckeditor5-build-classic.git"
+    "url": "https://github.com/Inventis/ckeditor5-build-classic.git"
   },
   "scripts": {
     "build": "webpack --mode production",
