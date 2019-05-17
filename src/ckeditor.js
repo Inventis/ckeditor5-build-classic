@@ -3,6 +3,8 @@
  * For licensing, see LICENSE.md.
  */
 
+__webpack_nonce__ = 'sUMIGHyvSCisBXgSLl9DnQ==';
+
 // The editor creator to use.
 import ClassicEditorBase from '@ckeditor/ckeditor5-editor-classic/src/classiceditor';
 
@@ -24,8 +26,6 @@ import Paragraph from '@ckeditor/ckeditor5-paragraph/src/paragraph';
 import Table from '@ckeditor/ckeditor5-table/src/table';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 import MediaBundleAdapter from './mediabundleadapter';
-
-__webpack_nonce__ = 'sUMIGHyvSCisBXgSLl9DnQ==';
 
 export default class ClassicEditor extends ClassicEditorBase {}
 
