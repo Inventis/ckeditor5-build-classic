@@ -12,7 +12,7 @@ const webpack = require('webpack');
 const {bundler, styles} = require('@ckeditor/ckeditor5-dev-utils');
 const CKEditorWebpackPlugin = require('@ckeditor/ckeditor5-dev-webpack-plugin');
 const UglifyJsWebpackPlugin = require('uglifyjs-webpack-plugin');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
     devtool: 'source-map',
@@ -55,9 +55,8 @@ module.exports = {
             banner: bundler.getLicenseBanner(),
             raw: true
         }),
-        new ExtractTextPlugin('styles.min.css'),
+        new MiniCssExtractPlugin({filename: 'styles.min.css'}),
     ],
-
     module: {
         rules: [
             {
@@ -66,7 +65,8 @@ module.exports = {
             },
             {
                 test: /\.css$/,
-                use: ExtractTextPlugin.extract([
+                use: [
+                    MiniCssExtractPlugin.loader,
                     'css-loader',
                     {
                         loader: 'postcss-loader',
@@ -77,7 +77,7 @@ module.exports = {
                             minify: true
                         })
                     }
-                ])
+                ]
             }
         ]
     }
