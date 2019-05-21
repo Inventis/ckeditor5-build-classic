@@ -3,8 +3,6 @@
  * For licensing, see LICENSE.md.
  */
 
-__webpack_nonce__ = 'sUMIGHyvSCisBXgSLl9DnQ==';
-
 // The editor creator to use.
 import ClassicEditorBase from '@ckeditor/ckeditor5-editor-classic/src/classiceditor';
 
