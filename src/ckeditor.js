@@ -61,6 +61,10 @@ ClassicEditor.defaultConfig = {
             'link',
             'bulletedList',
             'numberedList',
+			'|',
+			'indent',
+			'outdent',
+			'|',
             'mediaSelect',
             'blockQuote',
             'insertTable',
@@ -85,5 +89,7 @@ ClassicEditor.defaultConfig = {
         ]
     },
     // This value must be kept in sync with the language defined in webpack.config.js.
-    language: 'en'
+    language: 'en',
+	additionalLanguages: 'all',
+	buildAllTranslationsToSeparateFiles: true,
 };
