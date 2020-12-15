@@ -36,7 +36,6 @@ export default class MediaInsertCommand extends Command {
      */
     execute(options) {
         const editor = this.editor;
-        const doc = editor.model.document;
 
         editor.model.change(writer => {
             const mediaToInsert = Array.isArray(options.media) ? options.media : [options.media];
@@ -56,7 +55,6 @@ export default class MediaInsertCommand extends Command {
 function insertMedia(writer, editor, media)
 {
     const doc = editor.model.document;
-
 
     let imageAttributes = {src: media.src, alt: media.name, caption: media.description};
     const srcSet = media.srcset && Array.isArray(media.srcset) ? media.srcset.join(',') : null;
@@ -84,6 +82,10 @@ function insertMedia(writer, editor, media)
 function isImageAllowedInParent( selection, schema, model )
 {
     const parent = getInsertImageParent( selection, model );
+
+    if (!parent) {
+    	return true;
+	}
 
     return schema.checkChild( parent, 'image' );
 }
