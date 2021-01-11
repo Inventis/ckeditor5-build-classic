@@ -18,6 +18,7 @@ import ImageStyle from '@ckeditor/ckeditor5-image/src/imagestyle';
 import ImageToolbar from '@ckeditor/ckeditor5-image/src/imagetoolbar';
 import Indent from '@ckeditor/ckeditor5-indent/src/indent';
 import Link from '@ckeditor/ckeditor5-link/src/link';
+import LinkImage from '@ckeditor/ckeditor5-link/src/linkimage';
 import List from '@ckeditor/ckeditor5-list/src/list';
 import MediaEmbed from '@ckeditor/ckeditor5-media-embed/src/mediaembed';
 import Paragraph from '@ckeditor/ckeditor5-paragraph/src/paragraph';
@@ -44,6 +45,7 @@ ClassicEditor.builtinPlugins = [
 	Indent,
     MediaBundleAdapter,
     Link,
+	LinkImage,
     List,
     MediaEmbed,
     Paragraph,
@@ -80,7 +82,9 @@ ClassicEditor.defaultConfig = {
             'imageStyle:full',
             'imageStyle:side',
             '|',
-            'imageTextAlternative'
+            'imageTextAlternative',
+			'|',
+			'linkImage'
         ]
     },
     table: {
