@@ -12,6 +12,7 @@ import Bold from '@ckeditor/ckeditor5-basic-styles/src/bold';
 import Italic from '@ckeditor/ckeditor5-basic-styles/src/italic';
 import BlockQuote from '@ckeditor/ckeditor5-block-quote/src/blockquote';
 import Heading from '@ckeditor/ckeditor5-heading/src/heading';
+import HtmlEmbed from '@ckeditor/ckeditor5-html-embed/src/htmlembed';
 import Image from '@ckeditor/ckeditor5-image/src/image';
 import ImageCaption from '@ckeditor/ckeditor5-image/src/imagecaption';
 import ImageStyle from '@ckeditor/ckeditor5-image/src/imagestyle';
@@ -38,6 +39,7 @@ ClassicEditor.builtinPlugins = [
     Italic,
     BlockQuote,
     Heading,
+	HtmlEmbed,
     Image,
     ImageCaption,
     ImageStyle,
@@ -73,10 +75,14 @@ ClassicEditor.defaultConfig = {
             'blockQuote',
             'insertTable',
             'mediaEmbed',
+			'htmlEmbed',
             'undo',
             'redo'
         ]
     },
+	htmlEmbed: {
+		showPreviews: true,
+	},
     image: {
         toolbar: [
             'imageStyle:full',
